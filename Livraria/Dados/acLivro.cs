@@ -14,9 +14,7 @@ namespace Livraria.Dados
 {
     public class acLivro
     {
-#pragma warning disable IDE0044 // Adicionar modificador somente leitura
         Conexao con = new Conexao();
-#pragma warning restore IDE0044 // Adicionar modificador somente leitura
         acLivro ac = new acLivro();
         public void inserirLivro(modelLivro cm)
         {

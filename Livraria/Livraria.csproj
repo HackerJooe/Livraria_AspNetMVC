@@ -145,13 +145,16 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LivrariaController.cs" />
+    <Compile Include="Controllers\StatusController.cs" />
     <Compile Include="Dados\acLivro.cs" />
+    <Compile Include="Dados\acStatus.cs" />
     <Compile Include="Dados\clAutores.cs" />
     <Compile Include="Dados\Conexao.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\modelLivro.cs" />
+    <Compile Include="Models\modelStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -211,6 +214,8 @@
     <Content Include="Views\Livraria\listarLivros.cshtml" />
     <Content Include="Views\Home\cadAutor.cshtml" />
     <Content Include="Views\Home\atAutor.cshtml" />
+    <Content Include="Views\Status\cadStatus.cshtml" />
+    <Content Include="Views\Status\confCadStatus.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
