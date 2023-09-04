@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Cadastrar Autor";
+}
+
+<h2>Cadastro do Autor</h2>
+
+@using (Html.BeginForm("confCadAutor", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <label>Nome do Autor:</label>
+    <br />
+    <input type="text" id="txtNomeAutor" name="txtNomeAutor" />
+    <br />
+    <label>Status:</label>
+    <br />
+    <input type="text" id="txtStatus" name="txtStatus" />
+    <br />
+    <br />
+
+    <br />
+
+    <input type="submit" value="Cadastrar" />
+}
