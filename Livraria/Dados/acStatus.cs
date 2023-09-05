@@ -60,5 +60,16 @@ namespace Livraria.Dados
 
             con.MyDesconectarBD();
         }
+
+        public void excluirStatus(string id)
+        {
+            MySqlCommand cmd = new MySqlCommand("delete from tbStatus where codStatus=@codStatus", con.MyConectarBD());
+
+            cmd.Parameters.Add("@codStatus", MySqlDbType.VarChar).Value = id;
+
+            cmd.ExecuteNonQuery();
+            con.MyDesconectarBD();
+        }
+ 
     }
 }

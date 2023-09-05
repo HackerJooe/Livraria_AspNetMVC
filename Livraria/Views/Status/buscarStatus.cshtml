@@ -1,0 +1,41 @@
+﻿@model Livraria.Models.modelStatus
+
+@{
+    ViewBag.Title = "Buscar Status";
+}
+
+<h2>Buscar Status</h2>
+
+<p>
+    @Html.ActionLink("Criar Novo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.codStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sta)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.codStatus)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sta)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Editar", "editarStatus", new { id=item.codStatus })
+                        @Html.ActionLink("Detalhes", "Details", new {/* id=item.PrimaryKey */})
+                        @Html.ActionLink("Delete", "excluirStatus", new { id=item.codStatus }, new { onclick = "return confirm('Deseja realmente excluir este status?');" })
+                    </td>
+                </tr>
+            }
+</table>
+
+

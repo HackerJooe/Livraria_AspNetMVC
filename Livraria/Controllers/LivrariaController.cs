@@ -19,7 +19,7 @@ namespace Livraria.Controllers
         {
             List<SelectListItem> autores = new List<SelectListItem>();
 
-            using (MySqlConnection con = new MySqlConnection("Server=localhost; Database=bdLivraria; User=root; password= 1234546789"))
+            using (MySqlConnection con = new MySqlConnection("Server=localhost; Database=bdLivraria; User=root; password= 123456789"))
             {
                 con.Open();
                 MySqlCommand cmd = new MySqlCommand("select * from tbAutor where sta= 1", con);

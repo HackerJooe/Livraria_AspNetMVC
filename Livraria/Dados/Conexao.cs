@@ -8,7 +8,7 @@ namespace Livraria.Dados
 {
     public class Conexao
     {
-        MySqlConnection cn = new MySqlConnection("Server=localhost; Database=bdLivraria; User=root; pwd= 1234546789");
+        MySqlConnection cn = new MySqlConnection("Server=localhost; Database=bdLivraria; User=root; pwd= 123456789");
         public static string msg;
 
         // Método para CONEXÃO com o banco de Dados

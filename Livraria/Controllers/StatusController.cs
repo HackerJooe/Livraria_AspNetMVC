@@ -29,5 +29,27 @@ namespace Livraria.Controllers
         {
             return View(acoes.ListarStatus());
         }
+
+        public ActionResult buscarStatus()
+        {
+            return View();
+        }
+
+        public ActionResult editarStatus(string id)
+        {
+            return View(acoes.ListarStatus().Find(modelStatus => modelStatus.codStatus == id));
+        }
+        [HttpPost]
+        public ActionResult editarStatus (modelStatus modelStatus)
+        {
+            acoes.atualizarStatus(modelStatus);
+            return RedirectToAction(nameof(buscarStatus));
+        }
+
+        public ActionResult excluirStatus (string id)
+        {
+            acoes.excluirStatus(id);
+            return RedirectToAction(nameof(buscarStatus));
+        }
     }
 }

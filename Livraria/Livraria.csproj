@@ -216,6 +216,7 @@
     <Content Include="Views\Home\atAutor.cshtml" />
     <Content Include="Views\Status\cadStatus.cshtml" />
     <Content Include="Views\Status\confCadStatus.cshtml" />
+    <Content Include="Views\Status\buscarStatus.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
